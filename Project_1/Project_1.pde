@@ -28,19 +28,29 @@ void setup() {
   //fill(random(0, 255), random(0, 255), random(0, 255));
   
   // Create the circle1 and 2 arrays
-  circle1 = new float[2];
-  circle2 = new float[2];
+  circle1 = new float[4];
+  circle2 = new float[4];
+  circle3 = new float[4];
   
   // Initialise the circle1 array
   circle1[0] = random(10,990);
   circle1[1] = random(10,590);
+  circle1[2] = size;
+  circle1[3] = size;
   
   circle2[0] = random(10,990);
   circle2[1] = random(10,590);
+  circle2[2] = size;
+  circle2[3] = size;
+  
+  circle3[0] = random(10,990);
+  circle3[1] = random(10,590);
+  circle3[2] = size;
+  circle3[3] = size;
   
   myCircles[0] = circle1;
   myCircles[1] = circle2;
-  myCircles[2] = circle2;
+  myCircles[2] = circle3;
   
   size(1000, 600);
   background(122);
