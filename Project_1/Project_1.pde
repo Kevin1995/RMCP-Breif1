@@ -11,6 +11,11 @@ void setup() {
   println(sRed);
   println(sGreen);
   println(sBlue);
+  
+  println(positionX);
+  println(positionY);
+  
+  float[][] myCircles = new float[20][];
 }
 
 void draw() {
