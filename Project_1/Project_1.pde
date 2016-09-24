@@ -1,4 +1,4 @@
-// Declare an array of floats (we will create and initialise the array later)
+// Declare an array of floats (we will create and initialise the arrays later)
 float[] circle1;
 float[] circle2;
 float[] circle3;
@@ -22,15 +22,22 @@ float[] circle20;
 
 float[][] myCircles = new float[20][];
 
+float positionX = random(1,999);
+float positionY = random(1,599);
+float size = random(10,50);
+
 void setup() {
-  // Create the circle array
-  circle1 = new float[2];
-  circle2 = new float[2];
+  //fill(random(0, 255), random(0, 255), random(0, 255));
   
-  // Initialise the circleA array
-  circle1[0] = random(0,255);
-  circle2[1] = random(0,255);
+  // Create the circle1 and 2 arrays
+  circle1 = new float[3];
+  circle2 = new float[3];
   
-  size(400, 400);
+  // Initialise the circle1 array
+  circle1[0] = positionX;
+  circle1[1] = positionY;
+  circle1[2] = size;
+  
+  size(1000, 600);
   background(122);
 }
