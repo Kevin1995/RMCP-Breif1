@@ -22,7 +22,9 @@ float[] circle20;
 
 float[][] myCircles = new float[3][];
 
-float size = random(10,50);
+float size1 = random(10,50);
+float size2 = random(10,50);
+float size3 = random(10,50);
 
 void setup() {
   //fill(random(0, 255), random(0, 255), random(0, 255));
@@ -35,18 +37,18 @@ void setup() {
   // Initialise the circle1 array
   circle1[0] = random(10,990);
   circle1[1] = random(10,590);
-  circle1[2] = size;
-  circle1[3] = size;
+  circle1[2] = size1;
+  circle1[3] = size1;
   
   circle2[0] = random(10,990);
   circle2[1] = random(10,590);
-  circle2[2] = size;
-  circle2[3] = size;
+  circle2[2] = size2;
+  circle2[3] = size2;
   
   circle3[0] = random(10,990);
   circle3[1] = random(10,590);
-  circle3[2] = size;
-  circle3[3] = size;
+  circle3[2] = size3;
+  circle3[3] = size3;
   
   myCircles[0] = circle1;
   myCircles[1] = circle2;
@@ -58,7 +60,7 @@ void setup() {
 
 void draw() {
   for (int r=0; r < 3; r++) {
-    ellipse(myCircles[r][0], myCircles[r][1], size, size);
+    ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][3]);
     
   }
 }
