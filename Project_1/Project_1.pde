@@ -20,6 +20,8 @@ float[] circle18;
 float[] circle19;
 float[] circle20;
 
+Face myFace;
+
 // Creating our 2D array and are storing 20 items in it
 float[][] myCircles = new float[20][];
 
@@ -69,6 +71,8 @@ float colour20 = random(0,255);
 
 void setup() {
 
+  myFace = new Face();
+  
   // Each circle is storing 4 points: x, y , width and 
   //height since ellipse takes 4 items
   
@@ -245,6 +249,8 @@ void setup() {
 
 void draw() {
   background(122);
+  myFace.coordinates(50, 50);
+  
   // Our for loop now generates 20 random circles with different 
   //x, y, width and height properties
   
