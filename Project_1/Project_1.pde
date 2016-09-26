@@ -244,12 +244,28 @@ void setup() {
 }
 
 void draw() {
-  
+  background(122);
   // Our for loop now generates 20 random circles with different 
   //x, y, width and height properties
   
   for (int r=0; r < 20; r++) {
     ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][3]);
     fill(myCircles[r][4]);
+    
+    if ((keyPressed == true) && (keyCode == UP)) {
+      myCircles[r][1] -= 5;
+    }
+    
+    if ((keyPressed == true) && (keyCode == DOWN)) {
+      myCircles[r][1] += 5;
+    }
+    
+    if ((keyPressed == true) && (keyCode == LEFT)) {
+      myCircles[r][0] -= 5;
+    }
+    
+    if ((keyPressed == true) && (keyCode == RIGHT)) {
+      myCircles[r][0] += 5;
+    }
   }
 }
