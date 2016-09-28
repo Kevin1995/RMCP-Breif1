@@ -18,7 +18,7 @@ class Face {
     
     ellipse(155, 30, 40, 40);
     
-    arc(100, 70, 30, 30, 0, PI);
+    arc(100, 100, 100, 100, 0, PI);
     
     popMatrix();
     
